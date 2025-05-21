@@ -17,6 +17,9 @@ public class DemoModel implements Demo{
     @ValueMapValue
     private int num;
 
+    @ValueMapValue
+    private String color;
+
     public String getArticleText() {
         return text;
     }
@@ -27,5 +30,9 @@ public class DemoModel implements Demo{
 
     public int getArticleNum() {
         return num;
+    }
+
+    public String getArticleColor() {
+        return color;
     }
 }
