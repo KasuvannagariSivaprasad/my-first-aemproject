@@ -1,7 +1,17 @@
-<div data-sly-use.model=com.adobe.aem.guides.may.core.models.DemoModel>
+<div data-sly-use.model=com.adobe.aem.guides.may.core.models.DigitalParent>
 
-    ${model.articleText} <br>
-    ${model.articleDes} <br>
-    ${model.articleNum}<br>
-    ${model.articleColor} 
+    ${model.text} <br>
+    ${model.des} <br>
+    ${model.num}<br>
+    ${model.color}  <br>
+
+    <div data-sly-list.item=${model.bookdetailswithmap}>
+
+    	${item.bookname} <br>
+    	${item.bookdes} <br>
+    	${item.bookprice}<br>
+
+    </div>
+
 </div>
+
