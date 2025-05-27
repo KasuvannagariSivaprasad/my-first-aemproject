@@ -56,6 +56,34 @@
                                     sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                     fieldLabel="Book Price"
                                     name="./bookprice"/>
+                                <multifield
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Add Book Writer Info">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./bookdetailswithwriter">
+                            <items jcr:primaryType="nt:unstructured">
+                                <bookwriter
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Book Writer"
+                                    name="./bookwriter"/>
+                                <writerdes
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Writer Description"
+                                    name="./writerdes"/>
+                                <writersalary
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                    fieldLabel="Writer Salary"
+                                    name="./writersalary"/>
+                            </items>
+                        </field>
+                    </multifield>
                             </items>
                         </field>
                     </multifield>
