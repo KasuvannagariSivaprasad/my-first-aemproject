@@ -5,6 +5,11 @@
     ${model.num}<br>
     ${model.color}  <br>
 
+    <h1>Page Name: ${model.getArticlePageName} </h1><br>
+    <h1>Page Title: ${model.getArticlePageTitle} </h1><br>
+    <h1>Page Path: ${model.getArticlePagePath} </h1><br>
+    <h1>Page Parent: ${model.getArticleParentPage}</h1> <br>
+
     <div data-sly-list.item=${model.bookdetailswithmap}>
 
     	${item.bookname} <br>
