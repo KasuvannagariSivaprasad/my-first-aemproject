@@ -2,11 +2,11 @@ package com.adobe.aem.guides.may.core.models;
 
 import java.util.List;
 
-import javax.inject.Inject;
+
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ResourceResolver;
+
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
@@ -31,22 +31,22 @@ public class DigitalParent {
     @ValueMapValue
     private String color;
 
-    @ScriptVariable
-    Page currentPage;//When taking Page you have verify the package com.day.cq.wcm.api.Page We have to use same variable names
+    // @ScriptVariable
+    // Page currentPage;//When taking Page you have verify the package com.day.cq.wcm.api.Page We have to use same variable names
 
-    public String getArticlePageName(){//here we can give any method name
-        return currentPage.getName(); //here we should use same as predefined method name
-    }
+    // public String getArticlePageName(){//here we can give any method name
+    //     return currentPage.getName(); //here we should use same as predefined method name
+    // }
 
-    public String getArticlePageTitle(){
-        return currentPage.getPageTitle();
-    }
-    public String getArticlePagePath(){
-        return currentPage.getPath();
-    }
-    public Page getArticleParentPage(){
-        return currentPage.getParent();
-    }
+    // public String getArticlePageTitle(){
+    //     return currentPage.getPageTitle();
+    // }
+    // public String getArticlePagePath(){
+    //     return currentPage.getPath();
+    // }
+    // public Page getArticleParentPage(){
+    //     return currentPage.getParent();
+    // }
 
     // @Inject
     // ResourceResolver resolver;

@@ -19,12 +19,12 @@ public class DigitalChild  {
     @ValueMapValue
     private String bookprice;
 
-        @ChildResource
-    public List<DigitalChild> bookdetailswithwriter;
+    //     @ChildResource
+    // public List<DigitalSubChild> bookdetailswithwriter;
 
-    public List<DigitalChild> getBookdetailswithwriter() {
-        return bookdetailswithwriter;
-    }
+    // public List<DigitalSubChild> getBookdetailswithwriter() {
+    //     return bookdetailswithwriter;
+    // }
 
     public String getBookname() {
         return bookname;
