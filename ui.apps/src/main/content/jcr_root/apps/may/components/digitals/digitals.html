@@ -26,3 +26,40 @@
 
 </div>
 
+data-sly-test
+
+<div data-sly-test="${10>5}">
+		<h1>Data Coming From the Test Block</h1>
+</div>
+
+data-sly-resource
+
+<div data-sly-include=siva.html></div>
+
+<div data-sly-resource="${'header' @resourceType='may/components/header'}"></div>
+
+data-sly-list
+
+<div data-sly-set.items="${['java','c','python','AEM','git']}">
+		<ul data-sly-list="${items}">
+
+            <li> ${item}</li>
+
+        </ul>
+
+</div>
+
+data-sly-template
+
+<div data-sly-template.writer="${@para1,para2,para3,para4}">
+
+		<h1> ${para1} </h1>
+		<h1> ${para2} </h1>
+		<h1> ${para3} </h1>
+		<h1> ${para4} </h1>
+</div>
+
+data-sly-call
+
+<div data-sly-call="${writer @para1='1000',para2='2000',para3='3000',para4='4000'}"></div>
+
