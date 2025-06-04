@@ -9,7 +9,7 @@ import org.osgi.service.metatype.annotations.Designate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Component(immediate = true, enabled = true, service = EmpConfigImpl.class, name="EmpConfigImpl")
+@Component(immediate = true, enabled = true, service = EmpConfigImpl.class)
 @Designate(ocd = EmpConfiguration.class)
 public class EmpConfigImpl {
 
