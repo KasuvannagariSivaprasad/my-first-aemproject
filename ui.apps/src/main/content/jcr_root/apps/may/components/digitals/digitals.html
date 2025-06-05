@@ -81,3 +81,18 @@ data-sly-element
 
 <h1 data-sly-element="${true}">text</h1>
 
+
+
+
+<div data-sly-use.obj="com.adobe.aem.guides.may.core.models.EmpConfigurationMethodsImpl"></div>
+
+    <h1>Employee Name: ${obj.empName}</h1>
+    <h1>Employee ID: ${obj.empId}</h1>
+    <h1>Employee Salary:${obj.empSalary}</h1>
+    <h1>Employee Contry:</h1>
+    <ul data-sly-list="${obj.empCountry}">
+        <li>${item}</li>
+    </ul>
+
+
+
