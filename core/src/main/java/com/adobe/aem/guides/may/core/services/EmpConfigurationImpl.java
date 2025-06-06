@@ -29,7 +29,7 @@ public class EmpConfigurationImpl implements EmpConfigurationMethods{//Note Siva
         empId=empConfiguration.empId();
         empSalary=empConfiguration.empSalary();
         empCountry=empConfiguration.empCountry();
-        // LOG.info(empName+" "+empId+" "+empSalary+" "+empCountry);
+        LOG.info(empName+" "+empId+" "+empSalary+" "+empCountry);
 
         LOG.info("activate() method from EmpConfigurationImpl");
     }
